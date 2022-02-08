@@ -58,7 +58,7 @@ body {
 	font-size: 13px;  /* 텍스트 필드 안의 글자 크기 지정 */
 	padding: 5px;  /* 텍스트 필드와 내용 사이의 패딩 지정 */
 	width: 200px;  /* 텍스트 필드 너비 지정 */
-}					
+}
 
 #signup input[required] {  /* 필수 입력 필드의 스타일 */
 	border:1px red solid;  
@@ -66,4 +66,22 @@ body {
 
 #signup input[readonly] {  /* 읽기 전용 필드의 스타일 */
 	border:none;
+}
+
+#signup fieldset:last-of-type {
+	border: none;
+	margin-bottom: 0;
+}
+
+#signup button:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+#signup input:not[type=radio] {
+	border: 1px solid #ccc solid;
+	border-radius: 3px;
+	font: 13px;
+	padding: 5px;
+	width: 200px;
 }
